@@ -11,11 +11,29 @@
 	  background: #eee;
 	  display:block;
 	  margin: 0 auto;}
+      
+      #dv{
+	  display:inline-flex;
+	  text-align:center;
+	  width:100%;
+      }
+      #dv div {
+	  padding:10px;
+	  margin:10px;
+	  background-color:darkgray;
+	  width:100%;
+      }
+      @media screen and (min-width : 450px){
+	  #dv {display:none;}
+      }
     </style>
   </head>
   <body>
     <canvas id="myCanvas" width="350" height="500"></canvas>
-    
+    <div id="dv">
+      <div id="l">L</div>
+      <div id="r">R</div>
+    </div>
     <script src="init.js" defer></script>
   </body>
 </html>
